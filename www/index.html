@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html class="all">
+    <head>
+        <title>Doorz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!-- Switch picture. Part 1. JS -->
+        <SCRIPT language="javascript1.1">
+            gifHome = new Image(54,18)
+            gifHome.src = "Doorzpages/img/Door1.png"
+            gifHome2 = new Image(54,18)
+            gifHome2.src = "Doorzpages/img/Justin.png"
+
+            function changeImg(cImg,ref) {
+                document.images[cImg].src = ref.src
+            }
+        </SCRIPT>
+    </head>
+    <body>
+    <center>
+        <div>
+            <br><br><br>
+            <h2>Welcome to Doorz</h2>
+            <br>
+            <!-- Doors 1-->
+            <a href="DoorzPages/Door1.html" class="outerLink">
+                <img src="DoorzPages/img/Door1.png" width="75" height="75" alt="Door1"
+                     class="darkableImage" 
+                     onmouseout="this.style.opacity = 1;
+                             this.filters.alpha.opacity = 100" 
+                     onmouseover="this.style.opacity = 0.6;
+                             this.filters.alpha.opacity = 60"/>
+            </a>
+            <!-- Doors 2-->
+            <a href="DoorzPages/Wrong!.html" class="outerLink">
+                <img src="Doorzpages/img/Door1.png" width="75" height="75" alt="Door1"
+                     class="darkableImage" 
+                     onmouseout="this.style.opacity = 1;
+                             this.filters.alpha.opacity = 100" 
+                     onmouseover="this.style.opacity = 0.6;
+                             this.filters.alpha.opacity = 60"/>
+            </a>
+            <p>Click a Door to play</p>
+            <!-- Menu  -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="setting.html">Setting</a></li>
+            </ul>
+            <!-- Switch picture. Part 2. JS -->
+            <a href="index.html" onMouseOver="changeImg('imgHome',gifHome2)"
+                onMouseOut="changeImg('imgHome',gifHome)">
+                <IMG src="Doorzpages/img/Door1.png"  width="75" height="75" border="0" name="imgHome">
+            </a>
+        </div>
+    </center>
+</body>
+</html>
